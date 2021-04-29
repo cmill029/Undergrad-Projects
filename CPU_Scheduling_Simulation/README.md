@@ -1,6 +1,6 @@
 # CPUSCHED
 CPUSCHED is a cpu scheduling simulation, it simulates 10000 processes being run by a CPU and then orgainizes them based on the different 
-types of scheduling.
+types of scheduling. This doesn't have a makefile because it was not required for the project.
 
 ## Installation
 use g++ compiler in order to run code
