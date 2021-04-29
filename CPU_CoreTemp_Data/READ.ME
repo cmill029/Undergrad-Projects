@@ -1,0 +1,47 @@
+# Requirements
+  * g++ v5.4 or newer
+  * Make
+
+# Compilation
+This code can be compiled with the provided makefile using the standard 'make' command.
+The make file includes a few flags
+
+# Sample Execution and Output
+If run without command line arguments using,
+
+...
+./CPU_Temps
+...
+
+the program prints the format for proper way to use the file
+for example running without a parameter would yield:
+
+Usage: ./CPU_Temps input_file_name
+
+
+if run using a proper input file name such as sensors-2018.12.26.txt
+where sensors-2018.12.26.txt is a file containing values for CPU core temperatures
+
+...
+./CPU_Temps sensors-2018.12.26.txt
+...
+
+the output should print the results to four different files named
+semesterProject-core-0.txt
+semesterProject-core-1.txt
+semesterProject-core-2.txt
+semesterProject-core-3.txt
+
+the files themselves contain lines taking a form similar to
+
+xk <= x <   xk+1; y_i      =    77.5427     +       -0.000141271x; type: least-square
+
+    0 <= x <     30; y_0      =        61.0000 +    0.6333x; interpolation
+   30 <= x <     60; y_1      =        98.0000 +   -0.6000x; interpolation
+   ...
+
+the file will continue until all values are printed for each time a CPU core temperature was taken
+
+if a file does not exist, cannot be opened or is invalid this error will be displayed
+
+ERROR: fileName.txt could not be opened

@@ -1,0 +1,34 @@
+# Requirements
+  * g++ v5.4 or newer
+  * Make
+
+# Compilation
+This code can be compiled with the provided makefile using the standard 'make' command.
+The make file includes a few flags
+
+# Sample Execution and Output
+If run without command line arguments using,
+
+...
+./MachineAssg1
+...
+
+the program merely prints the format of the chart with no data, as none is provided
+
+If run using inputs between the values of 0 (inclusive) and 1 (exclusive) such as
+
+...
+./MachineAssg1 .1 .2 .5
+...
+
+the output should take a form similar to
+
+| Base 10 |   Base 2   |
+| :-------|:-----------|
+| 0.1     | 0.00011001 |
+| 0.2     | 0.00110011 |
+| 0.5     | 0.10000000 |
+
+if a command line argument falls outside of 0 (inclusive) and 1 (exclusive) then an error message will appear
+
+Error, enter values in the domain of [0,1)
